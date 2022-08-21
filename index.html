@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake</title>
+    <style>
+        body{
+            margin: 60px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #26abff;
+        }
+        canvas{
+            box-shadow: black 0px 0px 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: sans-serif; color: white; font-weight: 10; letter-spacing: -1px;">
+        Snake
+    </h1>
+    <canvas id="game" width="400" height="400"></canvas>
+    <script src="src/Screen.js"></script>
+    <script src="src/Apple.js"></script>
+    <script src="src/Snake.js"></script>
+    <script src="src/Game.js"></script>
+    <script>new Game().start()</script>
+    <!-- <script src="script.js"></script></script> -->
+</body>
+</html>
